@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!--Main container-->
+<div class="container">
+    <div class="group">
+        <label for="">Firstname</label>
+        <input type="text" [value]="firstName" #fname>
+    </div>
+    <div class="group">
+        <label for="">Lastname</label>
+        <input type="text" [value]="lastName" #lname>
+    </div>
+    <button (click)="SubmitFunc(fname.value,lname.value)">Submit</button>
+    <p>{{title}}</p>
+</div>
+<!--End-->
